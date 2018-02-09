@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fifth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.dream.xukuan.stu5.FifthActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3">
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/detil_data_home" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/arrows_left" />
+
+        <ImageView
+            android:id="@+id/shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shared" />
+
+        <ImageView
+            android:layout_below="@id/shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shoucang" />
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/portrait1" />
+        <TextView
+            android:id="@+id/content_user_name"
+            android:layout_below="@id/head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/user_image"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="米扬"/>
+        <TextView
+            android:id="@+id/work_year"
+            android:layout_toRightOf="@id/user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/user_image"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#a9a3a3"
+            android:textSize="12dp"
+            android:text="3年教龄  五年级教学"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/content_user_name"
+            android:rating="3.5"
+            android:layout_marginRight="10dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@id/rating"
+            android:layout_alignBottom="@id/work_year"
+            android:text="&#165;120/小时"
+            android:textSize="12dp"
+            android:textColor="#f95033"/>
+        <TextView
+            android:layout_below="@id/user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:drawableLeft="@drawable/jinpai"
+            android:text="金牌教师  个人说明：授之以鱼不如授之以渔失败是成功之母"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="个人资料"
+            android:gravity="center"
+            android:drawableTop="@drawable/my_data_tabar010"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="课程信息"
+            android:gravity="center"
+            android:drawableTop="@drawable/my_data_tabar020"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="成功案例"
+            android:gravity="center"
+            android:drawableTop="@drawable/my_data_tabar030"
+            />
+        
+    </RadioGroup>
+
+
+</LinearLayout>

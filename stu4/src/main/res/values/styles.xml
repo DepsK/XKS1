@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="bottomText">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/bottomText</item>
+    </style>
+    <style name="topText">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="buttonText">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="contentText">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/contentColor</item>
+    </style>
+    <style name="dateText">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/topColor</item>
+    </style>
+    <style name="monthText">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/contentColor</item>
+    </style>
+    <style name="weizhiText">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/topColor</item>
+    </style>
+    <style name="inputText">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/viewColor</item>
+    </style>
+    <style name="head_user_name">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/head_user_name</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>  <style name="head_user_level">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/head_user_name</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="textcolor">
+        <item name="android:textColor">@color/colorAddress</item>
+    </style>
+    <style name="address" parent="textcolor">
+        <item name="android:textSize">30dp</item>
+    </style>
+    <style name="date"  parent="textcolor">
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="weather" parent="textcolor">
+        <item name="android:textSize">30dp</item>
+    </style>
+    <style name="temperature" parent="textcolor">
+        <item name="android:textSize">40dp</item>
+    </style>
+    <style name="fengxiang" parent="textcolor">
+        <item name="android:textSize">22dp</item>
+    </style>
+    <style name="type" parent="textcolor">
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="yesterday" >
+        <item name="android:textSize">22dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="tomorrow" >
+        <item name="android:textSize">22dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="selectCity" >
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/colorAddress</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+</resources>

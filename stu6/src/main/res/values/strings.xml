@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Stu6</string>
+    <string name="address">北京</string>
+    <string name="date">19日 星期一</string>
+    <string name="weather">晴</string>
+    <string name="temperature">温度</string>
+    <string name="fengxiang">风向</string>
+</resources>

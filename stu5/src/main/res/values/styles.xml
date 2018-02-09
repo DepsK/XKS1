@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="editHint">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColorHint">@color/hint</item>
+    </style>
+    <style name="inputHint">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColorHint">@color/inputHint</item>
+    </style>
+    <style name="loginButton1">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/loginButton</item>
+    </style>
+    <style name="loginButton2">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/loginButton</item>
+    </style>
+    <style name="registerState">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/register</item>
+    </style>
+    <style name="otherLoginState">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/otherLoginState</item>
+    </style>
+    <style name="otherLogin">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/otherLogin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="title">
+        <item name="android:background">@color/buttonBG</item>
+    </style>
+    <style name="titleText">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/loginButton</item>
+    </style>
+
+
+</resources>
