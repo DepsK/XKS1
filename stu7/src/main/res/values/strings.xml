@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Stu7</string>
+    <string name="title">标题</string>
+    <string name="content">内容</string>
+    <string name="fromName">来源</string>
 </resources>

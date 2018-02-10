@@ -7,5 +7,24 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="title">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/title</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="fromName">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/content</item>
+    </style>
+    <style name="content">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/content</item>
+    </style>
+    <style name="item">
+       <item name="android:layout_marginTop">15dp</item>
+       <item name="android:layout_marginBottom">15dp</item>
+       <item name="android:layout_marginRight">8dp</item>
+       <item name="android:layout_marginLeft">8dp</item>
+    </style>
 
 </resources>

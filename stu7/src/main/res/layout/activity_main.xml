@@ -7,6 +7,16 @@
     tools:context="com.dream.xukuan.stu7.MainActivity">
 
 
-
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据正在加载中，请稍候。。。。"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:id="@+id/empty_tv"/>
 
 </RelativeLayout>
