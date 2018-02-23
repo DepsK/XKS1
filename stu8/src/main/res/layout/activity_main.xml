@@ -6,8 +6,47 @@
     android:layout_height="match_parent"
     tools:context="com.dream.xukuan.stu8.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/beiJing"
+            style="@style/buttonText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:button="@drawable/button_selector"
+            android:checked="true"
+            android:text="北京" />
+
+        <RadioButton
+            android:id="@+id/shangHai"
+            style="@style/buttonText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/button_selector"
+            android:background="@drawable/buttonbg"
+            android:text="上海" />
+
+        <RadioButton
+            android:id="@+id/shenZheng"
+            style="@style/buttonText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/button_selector"
+            android:background="@drawable/buttonbg"
+            android:text="深圳" />
+    </RadioGroup>
+
 </RelativeLayout>
