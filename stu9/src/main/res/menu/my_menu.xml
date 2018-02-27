@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="更改文字大小" android:icon="@mipmap/ic_launcher">
+        <menu>
+            <item android:title="减小字体"
+                android:id="@+id/lowitem"
+                android:icon="@mipmap/ic_launcher"/>
+            <item android:title="增大字体"
+                android:id="@+id/bigger_item"
+                android:icon="@mipmap/ic_launcher"/>
+        </menu>
+    </item>
+    <item
+    android:id="@+id/textColorItem"
+    android:title="更改文字颜色"
+    android:icon="@mipmap/ic_launcher"/>
+    <item
+    android:id="@+id/textStyleItem"
+    android:title="更改文字样式"
+    android:icon="@mipmap/ic_launcher"/>
+
+</menu>
