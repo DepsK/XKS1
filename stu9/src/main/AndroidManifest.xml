@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dream.xukuan.stu9">
 
+
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +23,9 @@
         <activity android:name=".FourthActivity" />
         <activity android:name=".FifthActivity" />
         <activity android:name=".SixthActivity" />
-        <activity android:name=".HW1Activity"></activity>
+        <activity android:name=".HW1Activity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".HW2Activity"></activity>
     </application>
 
 </manifest>
