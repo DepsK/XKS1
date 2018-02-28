@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
                startActivity(intent);
            }
            break;
+           case R.id.hw1:{
+               Intent intent = new Intent(this,HW1Activity.class);
+               startActivity(intent);
+           }
+           break;
            default:
        }
    }

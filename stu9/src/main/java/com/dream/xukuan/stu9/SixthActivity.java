@@ -22,18 +22,25 @@ public class SixthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sixth);
         imageView = (ImageView) findViewById(R.id.image);
+        window = new PopupWindow();
+        // 必须设置宽和高。否则不会显示
+        window.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
+        window.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
+        View popupView = LayoutInflater.from(SixthActivity.this).inflate(R.layout.popup_layout,null);
+        window.setContentView(popupView);
+        //用户点击其他地方是否隐藏已经显示的PopupWindow。注意：只有同时设置setBackgroundDrawable才有效果。
+        window.setOutsideTouchable(true);
+        window.setBackgroundDrawable(new ColorDrawable(Color.RED));
+        window.setFocusable(true);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                View popupView = LayoutInflater.from(SixthActivity.this).inflate(R.layout.popup_layout,null);
-                window = new PopupWindow();
-                window.setContentView(popupView);
-                // 必须设置宽和高。否则不会显示
-                window.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
-                window.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
-                //用户点击其他地方是否隐藏已经显示的PopupWindow。注意：只有同时设置setBackgroundDrawable才有效果。
-                window.setOutsideTouchable(true);
-                window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                if(window.isShowing()){
+                    window.dismiss();
+                }else {
+                    // 在某个具体的坐标上展示PopupWindow自定义菜单
+                    window.showAtLocation(findViewById(R.id.root), Gravity.BOTTOM,0,100);
+                }
 
             }
         });

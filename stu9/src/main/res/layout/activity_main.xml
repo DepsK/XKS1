@@ -43,4 +43,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="跳转到第六个"/>
+    <Button
+        android:id="@+id/hw1"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到作业1"/>
 </LinearLayout>
