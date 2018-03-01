@@ -5,18 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
     tools:context="com.dream.xukuan.stu10.SecondActivity">
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        />
-    <Button
-        android:onClick="load"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="下载图片"/>
+        android:hint="请输入商品名称"
+        android:id="@+id/name_ed"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入商品价格"
+        android:id="@+id/price_ed"/>
+    <Button
+        android:id="@+id/internal_btn"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存到内部文件" />
 
+    <Button
+        android:id="@+id/internal_read_btn"
+        android:onClick="clickRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读内部文件" />
+
+
+    <Button
+        android:id="@+id/external_btn"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存到外部文件" />
+    
 </LinearLayout>

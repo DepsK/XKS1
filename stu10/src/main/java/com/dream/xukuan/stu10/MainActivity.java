@@ -25,13 +25,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
             break;
-            case R.id.third:{
-                Intent intent = new Intent(MainActivity.this,ThirdActivity.class);
-                startActivity(intent);
-            }
-            break;
-            case R.id.fourth:{
-                Intent intent = new Intent(MainActivity.this,FourthActivity.class);
+            case R.id.hw:{
+                Intent intent = new Intent(MainActivity.this,HWActivity.class);
                 startActivity(intent);
             }
             break;

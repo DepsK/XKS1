@@ -20,15 +20,9 @@
         android:layout_height="wrap_content"
         android:text="跳转到第二个" />
     <Button
-        android:id="@+id/third"
+        android:id="@+id/hw"
         android:onClick="check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="跳转到第三个" />
-    <Button
-        android:id="@+id/fourth"
-        android:onClick="check"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="跳转到第四个" />
+        android:text="跳转到作业" />
 </LinearLayout>

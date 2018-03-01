@@ -66,7 +66,7 @@ public class FirstActivity extends AppCompatActivity {
     public void login(View view) {
         String name = nameEdit.getText().toString();
         String password = passwordEdit.getText().toString();
-        if (TextUtils.isEmpty(name) && TextUtils.isEmpty(password)) {
+        if (TextUtils.isEmpty(name) ||TextUtils.isEmpty(password)) {
             Toast.makeText(FirstActivity.this, "输入帐号或密码不能为空", Toast.LENGTH_LONG).show();
         } else {
             SharedPreferences sp = getSharedPreferences("my_user", MODE_PRIVATE);
