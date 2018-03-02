@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.dream.xukuan.stu11.FirstActivity">
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入学生姓名"/>
+    <EditText
+        android:id="@+id/score_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入学生分数"/>
+    <Button
+        android:onClick="insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加到数据表中"
+        android:textSize="20dp"/>
+</LinearLayout>
