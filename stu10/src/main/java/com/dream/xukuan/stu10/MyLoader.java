@@ -1,4 +1,4 @@
-package com.dream.xukuan.stu10;
+﻿package com.dream.xukuan.stu10;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -18,13 +18,13 @@ import java.net.URL;
  * @author XK
  * @date 2018/3/1.
  */
-public class MyImageLoader extends AsyncTask<String,String,Bitmap> {
+public class MyLoader extends AsyncTask<String,String,Bitmap> {
 
 
     private final Context context;
     private ImageView imageView;
 
-    public MyImageLoader(Context context) {
+    public MyLoader (Context context) {
         this.context = context;
     }
 
@@ -78,7 +78,7 @@ public class MyImageLoader extends AsyncTask<String,String,Bitmap> {
         this.imageView = imageView;
     }
 
-    public MyImageLoader load(String imgUrl){
+    public MyLoader load(String imgUrl){
         execute(imgUrl);
         return this;
     }

@@ -18,7 +18,7 @@ public class HWActivity extends AppCompatActivity {
 
     public void load(View view){
         String imgUrl = "http://img.taopic.com/uploads/allimg/140227/235111-14022F9410899.jpg";
-        MyImageLoader loader = new MyImageLoader(HWActivity.this);
+        MyLoader loader = new MyLoader(HWActivity.this);
         loader.load(imgUrl).into(imageView);
     }
 }
