@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:hint="输入学生分数"/>
     <Button
-        android:onClick="insert"
+        android:id="@+id/insert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="添加到数据表中"

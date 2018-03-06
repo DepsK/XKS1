@@ -13,12 +13,27 @@ import android.widget.Toast;
  * @author XK
  * @date 2018/3/2.
  */
-public class MyDialog extends Dialog {
+public class MyDialog extends Dialog implements View.OnClickListener {
 
     EditText nameEdit;
     EditText scoreEdit;
+    Button button;
 
     private final OnEditOkListener listener;
+
+    @Override
+    public void onClick(View v) {
+        String name = nameEdit.getText().toString();
+        String score = scoreEdit.getText().toString();
+        if(!TextUtils.isEmpty(name)&&!TextUtils.isEmpty(score)){
+            if(listener !=null){
+                listener.onEditOK(name,score);
+
+            }else{
+                listener.onEditError("输入姓名或分数不能为空!");
+            }
+        }
+    }
 
     public interface OnEditOkListener{
         void onEditOK(String name, String score);
@@ -35,17 +50,7 @@ public class MyDialog extends Dialog {
         setContentView(R.layout.activity_dialog);
         nameEdit = (EditText) findViewById(R.id.name_edit);
         scoreEdit = (EditText) findViewById(R.id.score_edit);
-    }
-    public void insert(View view){
-        String name = nameEdit.getText().toString();
-        String score = scoreEdit.getText().toString();
-        if(!TextUtils.isEmpty(name)&&!TextUtils.isEmpty(score)){
-            if(listener !=null){
-                listener.onEditOK(name,score);
-
-            }else{
-                listener.onEditError("输入姓名或分数不能为空!");
-            }
-        }
+        button = (Button) findViewById(R.id.insert);
+        button.setOnClickListener(MyDialog.this);
     }
 }

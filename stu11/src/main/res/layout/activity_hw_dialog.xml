@@ -51,14 +51,12 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/cancel"
-            android:onClick="click"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="取消"/>
         <Button
             android:id="@+id/enter"
-            android:onClick="click"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
