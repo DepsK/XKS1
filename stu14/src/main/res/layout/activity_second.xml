@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dream.xukuan.stu14.SecondActivity">
+
+    <ImageView
+        android:id="@+id/second_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_star"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/second_star"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="轻触屏幕开始动画"
+        android:textColor="#6ae76a"
+        android:textSize="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
