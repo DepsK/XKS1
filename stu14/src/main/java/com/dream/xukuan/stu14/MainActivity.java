@@ -18,21 +18,25 @@ public class MainActivity extends AppCompatActivity {
             case R.id.first:{
                 Intent intent = new Intent(MainActivity.this,FirstActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.enter_animation,R.anim.exit_animation);
             }
             break;
             case R.id.second:{
                 Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.enter_animation,R.anim.exit_animation);
             }
             break;
             case R.id.third:{
                 Intent intent = new Intent(MainActivity.this,ThirdActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.enter_animation,R.anim.exit_animation);
             }
             break;
             case R.id.fourth:{
                 Intent intent = new Intent(MainActivity.this,FourthActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.enter_animation,R.anim.exit_animation);
             }
             break;
             default:
