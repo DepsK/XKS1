@@ -11,7 +11,7 @@
         android:src="@drawable/background"
         android:scaleType="fitXY"/>
     <ImageView
-        android:id="@+id/third_pig"
+        android:id="@+id/fourth_pig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/pig1"
