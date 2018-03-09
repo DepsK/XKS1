@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_second"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.dream.xukuan.stu15.SecondActivity">
 
-</RelativeLayout>
+    <Button
+        android:onClick="clickSend1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:text="activity传值给静态Fragment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+        <fragment
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:name="com.dream.xukuan.stu15.SecondFragment1"
+            android:id="@+id/second_frag1"/>
+        <fragment
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:name="com.dream.xukuan.stu15.SecondFragment2"
+            android:id="@+id/second_frag2"/>
+
+    </LinearLayout>
+    <TextView
+        android:text="显示Fragment3传回的数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"/>
+    <Button
+        android:text="点击后添加Fragment3,并且传递数据"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickAdd"/>
+
+    <Button
+        android:text="点击传递数据给动态Fragment3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickSend2"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/second_fragment_container"/>
+
+</LinearLayout>

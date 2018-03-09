@@ -7,13 +7,19 @@
     android:orientation="vertical"
     tools:context="com.dream.xukuan.stu15.FirstActivity">
 
-    <fragment
-        android:name="com.dream.xukuan.stu15.FirstFragment"
-        android:id="@+id/first_fragment"
+
+    <!-- <fragment
+            android:name="com.dream.xukuan.stu15.FirstFragment1"
+            android:id="@+id/first_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />-->
+    <FrameLayout
+        android:id="@+id/first_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        />
+        android:layout_weight="1"/>
 
     <Button
         android:onClick="click"
